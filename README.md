@@ -10,10 +10,10 @@ steps:
       - "-c"
       - |
         gcloud artifacts print-settings npm \
-        --project=bots-shared \
-        --repository=sfeir-factory-mh-bots \
+        --project=projectx \
+        --repository=repox \
         --location=europe-west1 \
-        --scope=@sfeir-bots > .npmrc
+        --scope=@bots > .npmrc
   - name: node:$_NODE_VERSION
     entrypoint: bash
     args:
